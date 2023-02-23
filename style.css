@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    align-items: center;
+
+    margin-bottom: 500px;
+}
+
+.headers {
+    color: cadetblue;
+}
+
+li {
+    color: grey;
+}
+
+h1 {
+    color: grey;
+}
+
+a {
+    color: cadetblue;
+}
+
+/*========HEADER===========*/
+
+.header {
+    text-align: center;
+}
+
+.header .logo {
+    width: 450px;
+    box-shadow: 1px 1px 1px 3px white;
+    border-radius: 15px;
+    animation: logo 0.5s alternate-reverse infinite;
+}
+
+@keyframes logo {
+    from {
+        box-shadow: 1px 1px 1px 3px white;
+    }
+
+    to {
+        box-shadow: 1px 1px 1px 7px cadetblue;
+    }
+}
+
+.header h1 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/*========HEADER ICON==========*/
+
+.icon {
+    width: 77px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+/*==========ABOUT BMW========*/
+
+.bmw-auto {
+    width: 1200px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.about__bmw {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.about__bmw__intro__text {
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+    padding: 30px;
+    width: 1200px;
+    margin-top: 30px;
+
+    animation: introtext 0.5s alternate-reverse infinite;
+}
+
+@keyframes introtext {
+    from {
+        box-shadow: 1px 1px 1px 3px white;
+    }
+
+    to {
+        box-shadow: 1px 1px 1px 3px rgb(0, 57, 59);
+    }
+}
+
+.about__bmw__oneintro,
+.about__bmw__twointro,
+.about__bmw__threeintro,
+.about__bmw__fourintro,
+.about__bmw__fifeintro,
+.about__bmw__sixintro,
+.about__bmw__sevenintro,
+.about__bmw__eightintro,
+.about__bmw__nineintro,
+.about__bmw__tenintro,
+.about__bmw__ilevenintro,
+.about__bmw__twelveintro {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.about__bmw__sevenintro .about__bmw__intro__text li, 
+.about__bmw__eightintro .about__bmw__intro__text li,
+.about__bmw__ilevenintro .about__bmw__intro__text li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15px;
+    color: cadetblue;
+}
+
+.about__bmw__sevenintro .about__bmw__intro__text li::marker,
+.about__bmw__eightintro .about__bmw__intro__text li::marker,
+.about__bmw__ilevenintro .about__bmw__intro__text li::marker {
+    color: white;
+}
+
+/*===========ABOUT MERCEDES===========*/
+
+.mercedes-auto {
+    width: 800px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.auto-names {
+    text-align: center;
+}
+
+.images__and__names {
+    border: 1px solid black;
+    width: 350px;
+}
+
+.about__mercedes {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 150px;
+}
+
+.about__mercedes__intro__text {
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+    padding: 30px;
+    width: 1200px;
+    margin-top: 30px;
+
+    animation: introtext 0.5s alternate-reverse infinite;
+}
+
+@keyframes introtext {
+    from {
+        box-shadow: 1px 1px 1px 3px white;
+    }
+
+    to {
+        box-shadow: 1px 1px 1px 3px rgb(0, 57, 59);
+    }
+}
+
+.about__mercedes__oneintro,
+.about__mercedes__twointro,
+.about__mercedes__threeintro,
+.about__mercedes__fourintro,
+.about__mercedes__fifeintro,
+.about__mercedes__sixintro,
+.about__mercedes__sevenintro,
+.about__mercedes__eightintro,
+.about__mercedes__nineintro,
+.about__mercedes__tenintro,
+.about__mercedes__ilevenintro,
+.about__mercedes__twelveintro {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.about__mercedes__tenintro {
+    margin-bottom: 100px;
+}
+
+/*============MEDIA ADAPTIVE ABOUT BMW & MERCEDES==========*/
+
+@media screen and (max-width: 1400px) {
+    .about__bmw,
+    .about__mercedes {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .headers {
+        text-align: center;
+    }
+
+    .about__bmw li::marker,
+    .about__mercedes li::marker {
+        color: black;
+    }
+
+    .about__bmw__intro__text,
+    .about__mercedes__intro__text {
+        width: 300px;
+    }
+
+    .bmw-auto,
+    .mercedes-auto {
+        width: 300px;
+    }
+
+    .header .logo {
+        width: 350px;
+    }
+}
+
+/*==============LOGO EVOLUTON=========*/
+
+.logo__evolution {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 150px;
+}
+
+.bmw-logo,
+.mercedes-logo {
+    border: 1px solid white;
+    background-color: white;
+    width: 300px;
+
+    margin: 25px;
+}
+
+.bmw__evolution {
+    margin-bottom: 100px;
+}
+
+/*==========MEDIA ADAPTIVE LOGO EVOLUTION========*/
+
+@media screen and(max-width: 2000px) {
+    .logo__evolution {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo__evolution {
+        display: block;
+        text-align: center;
+    }
+
+    .bmw-logo,
+    .mercedes-logo {
+        margin-left: 50px;
+    }
+
+    .logo__evolution p {
+        text-align: center;
+        margin-left: 50px;
+    }
+}
